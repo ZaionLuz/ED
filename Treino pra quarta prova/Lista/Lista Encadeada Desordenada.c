@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct lista
+typedef struct lista
 {
     int info;
     struct lista *prox;
-};
-typedef struct lista Lista;
+} Lista;
 
 Lista *lst_cria();
 Lista *lst_insere(Lista *l, int i);
